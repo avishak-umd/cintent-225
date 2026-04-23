@@ -25,9 +25,9 @@ jobs:
         uses: snok/install-poetry@v1
 
       # CINTENT >> INSERT_CINTENT
-      - uses: JavidDitty/setup-cintent@3638849e94bdb037f0a405375686a8550e6df904
+      - uses: JavidDitty/setup-cintent@main
         with:
-          nonblocking: true
+          profiler: "setprofile"
 
       - name: Install pip tools
         run: python -m pip install --upgrade pip setuptools wheel
